@@ -56,14 +56,9 @@ Analysis of the **spatio-temporal dynamics** of the pandemic in Cameroon, includ
 -   predominant variants and lineages,
 -   geographic and temporal distribution.
 
-Main tools:
-- **Nextclade** for variant and sub-lineage classification,
-- **tidyverse** and **plotly** for analyses and interactive visualizations.
+Main tools: - **Nextclade** for variant and sub-lineage classification, - **tidyverse** and **plotly** for analyses and interactive visualizations.
 
-Results:
-- **national epidemic curves**,
-- **dynamic maps** (spread and accredited laboratories),
-- **evolution of variants and sub-lineages** over time.
+Results: - **national epidemic curves**, - **dynamic maps** (spread and accredited laboratories), - **evolution of variants and sub-lineages** over time.
 
 ------------------------------------------------------------------------
 
@@ -71,10 +66,7 @@ Results:
 
 Study of **genetic relatedness and similarity** between Cameroonian and international strains.
 
-Tools:
-- **Mafft** (multiple alignment),
-- **IQTree** (maximum likelihood phylogeny),
-- **ggtree** (visualization).
+Tools: - **Mafft** (multiple alignment), - **IQTree** (maximum likelihood phylogeny), - **ggtree** (visualization).
 
 ------------------------------------------------------------------------
 
