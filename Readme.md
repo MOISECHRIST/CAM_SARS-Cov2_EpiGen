@@ -26,10 +26,10 @@ Analyser la **dynamique d’introduction et de propagation** du SARS-CoV-2 au Ca
 
 De manière plus précise, il s’agira de :
 
-- décrire la **dynamique spatio-temporelle de propagation** du virus à travers les différentes régions du pays,
-- identifier et caractériser les **événements d’introduction** du SARS-CoV-2 et de ses variants (VOC et VOI) sur le territoire national,
-- mettre en évidence la **circulation locale et inter-régionale** des lignages viraux afin de comprendre les chaînes de transmission,
-- valoriser ces résultats à travers une **application Shiny interactive** permettant la visualisation et l’exploration des données.
+-   décrire la **dynamique spatio-temporelle de propagation** du virus à travers les différentes régions du pays,
+-   identifier et caractériser les **événements d’introduction** du SARS-CoV-2 et de ses variants (VOC et VOI) sur le territoire national,
+-   mettre en évidence la **circulation locale et inter-régionale** des lignages viraux afin de comprendre les chaînes de transmission,
+-   valoriser ces résultats à travers une **application Shiny interactive** permettant la visualisation et l’exploration des données.
 
 ------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ La réalisation de ce projet s’est effectuée en plusieurs étapes :
 Les données provenaient de deux principales sources :
 
 | Source | Description | Données collectées | Période | Localisation |
-|--------------|--------------|-------------------|--------------|--------------|
+|----|----|----|----|----|
 | **LNSP / Unité gestion de données** | Informations sur la confirmation des cas dans les laboratoires agréés Covid-19 compilées par l’unité gestion de données du LNSP et l’unité laboratoire du CCOUSP. | \- date d’analyse<br>- région<br>- laboratoire agréé<br>- nombre de cas testés (RT-PCR)<br>- nombre de cas positifs (RT-PCR) | 2020–2024 | 10 régions du Cameroun |
 | **GISAID** | Données WGS du Covid-19 partagées par la communauté scientifique. | \- séquences complètes SARS-CoV-2 (fasta)<br>- date de collecte<br>- sexe patient<br>- âge patient<br>- symptômes<br>- géolocalisation (continent/pays/région) | 2019–2024 | Monde entier |
 
@@ -54,20 +54,20 @@ Les données ont ensuite été **nettoyées, harmonisées et normalisées** pour
 
 Analyse de la **dynamique spatio-temporelle** de la pandémie au Cameroun :
 
-- vagues épidémiques successives,
-- variants et lignées prédominants,
-- répartition géographique et temporelle.
+-   vagues épidémiques successives,
+-   variants et lignées prédominants,
+-   répartition géographique et temporelle.
 
 Outils principaux :
 
-- **Nextclade** pour la classification en variant, sous-lignées,
-- **tidyverse** et **plotly** pour les analyses et visualisations interactives.
+-   **Nextclade** pour la classification en variant, sous-lignées,
+-   **tidyverse** et **plotly** pour les analyses et visualisations interactives.
 
 Résultats :
 
-- **courbes épidémiologiques nationales**,\
-- **cartes dynamiques** (propagation et laboratoires agréés),\
-- **évolution des variants et sous-lignées** dans le temps.
+-   **courbes épidémiologiques nationales**,\
+-   **cartes dynamiques** (propagation et laboratoires agréés),\
+-   **évolution des variants et sous-lignées** dans le temps.
 
 ------------------------------------------------------------------------
 
@@ -77,9 +77,9 @@ Résultats :
 
 Outils :
 
-- **Mafft** (alignement multiple),
-- **IQTree** (ML phylogeny),
-- **ggtree** (visualisation).
+-   **Mafft** (alignement multiple),
+-   **IQTree** (ML phylogeny),
+-   **ggtree** (visualisation).
 
 ------------------------------------------------------------------------
 
@@ -87,9 +87,9 @@ Outils :
 
 Analyse des **événements d’introduction du SARS-CoV-2** au Cameroun avec **Treetime**, afin de :
 
-- estimer le **nombre d’introductions indépendantes**,
-- identifier les **sources probables** (pays/régions),
-- décrire la **diffusion locale** après introduction.
+-   estimer le **nombre d’introductions indépendantes**,
+-   identifier les **sources probables** (pays/régions),
+-   décrire la **diffusion locale** après introduction.
 
 ------------------------------------------------------------------------
 
@@ -97,10 +97,10 @@ Analyse des **événements d’introduction du SARS-CoV-2** au Cameroun avec **T
 
 Une **application Shiny interactive** a été développée pour :
 
-- visualiser les courbes épidémiologiques,
-- explorer les **cartes dynamiques** (propagation et laboratoires),
-- suivre l’évolution des **variants et lignées**,
-- consulter les **arbres phylogénétiques interactifs**.
+-   visualiser les courbes épidémiologiques,
+-   explorer les **cartes dynamiques** (propagation et laboratoires),
+-   suivre l’évolution des **variants et lignées**,
+-   consulter les **arbres phylogénétiques interactifs**.
 
 ------------------------------------------------------------------------
 
