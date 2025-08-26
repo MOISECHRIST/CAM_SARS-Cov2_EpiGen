@@ -24,9 +24,9 @@ To analyze the **dynamics of introduction and spread** of SARS-CoV-2 in Cameroon
 
 ### 2. Specific Objectives
 
--   describe the **spatio-temporal dynamics of viral spread** across the different regions of the country,\
--   identify and characterize **introduction events** of SARS-CoV-2 and its variants (VOC and VOI) within the national territory,\
--   highlight the **local and inter-regional circulation** of viral lineages to better understand transmission chains,\
+-   describe the **spatio-temporal dynamics of viral spread** across the different regions of the country,
+-   identify and characterize **introduction events** of SARS-CoV-2 and its variants (VOC and VOI) within the national territory,
+-   highlight the **local and inter-regional circulation** of viral lineages to better understand transmission chains,
 -   showcase these results through an **interactive Shiny application** enabling visualization and exploration of the data.
 
 ------------------------------------------------------------------------
@@ -52,17 +52,17 @@ The data were then **cleaned, harmonized, and standardized** to build a consolid
 
 Analysis of the **spatio-temporal dynamics** of the pandemic in Cameroon, including:
 
--   successive epidemic waves,\
--   predominant variants and lineages,\
+-   successive epidemic waves,
+-   predominant variants and lineages,
 -   geographic and temporal distribution.
 
-Main tools:\
-- **Nextclade** for variant and sub-lineage classification,\
+Main tools:
+- **Nextclade** for variant and sub-lineage classification,
 - **tidyverse** and **plotly** for analyses and interactive visualizations.
 
-Results:\
-- **national epidemic curves**,\
-- **dynamic maps** (spread and accredited laboratories),\
+Results:
+- **national epidemic curves**,
+- **dynamic maps** (spread and accredited laboratories),
 - **evolution of variants and sub-lineages** over time.
 
 ------------------------------------------------------------------------
@@ -71,9 +71,9 @@ Results:\
 
 Study of **genetic relatedness and similarity** between Cameroonian and international strains.
 
-Tools:\
-- **Mafft** (multiple alignment),\
-- **IQTree** (maximum likelihood phylogeny),\
+Tools:
+- **Mafft** (multiple alignment),
+- **IQTree** (maximum likelihood phylogeny),
 - **ggtree** (visualization).
 
 ------------------------------------------------------------------------
@@ -82,8 +82,8 @@ Tools:\
 
 Analysis of **SARS-CoV-2 introduction events** into Cameroon using **Treetime**, to:
 
--   estimate the **number of independent introductions**,\
--   identify the **probable sources** (countries/regions),\
+-   estimate the **number of independent introductions**,
+-   identify the **probable sources** (countries/regions),
 -   describe **local spread** after introduction.
 
 ------------------------------------------------------------------------
@@ -92,9 +92,9 @@ Analysis of **SARS-CoV-2 introduction events** into Cameroon using **Treetime**,
 
 An **interactive Shiny application** was developed to:
 
--   visualize epidemic curves,\
--   explore **dynamic maps** (spread and laboratories),\
--   monitor the evolution of **variants and lineages**,\
+-   visualize epidemic curves,
+-   explore **dynamic maps** (spread and laboratories),
+-   monitor the evolution of **variants and lineages**,
 -   consult **interactive phylogenetic trees**.
 
 ------------------------------------------------------------------------
