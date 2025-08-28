@@ -9,9 +9,13 @@ cmr_gisaid_metadata <- import(path_to_cmr_gisaid_metadata) |>
   clean_names() 
 
 
-#cmr_gisaid_metadata %>%
-#  select(strain, gisaid_epi_isl) %>%
-#  rename(old_name = strain,
-#         new_name = gisaid_epi_isl) %>%
-#  rio::export("data/rename_sequences.csv")
+cmr_gisaid_metadata %>%
+  select(strain, gisaid_epi_isl) %>%
+  rename(old_name = strain,
+         new_name = gisaid_epi_isl) %>%
+  rio::export("data/gisaid_cmr/rename_sequences.csv")
+
+
+
+
 
