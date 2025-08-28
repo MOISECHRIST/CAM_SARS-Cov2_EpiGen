@@ -120,3 +120,12 @@ summary.region.epidata <- function(all_cmr_epidata){
 }
 
 region_cmr_summary <- summary.region.epidata(all_cmr_epidata)
+
+path_to_hcov_map_data <- "data/epidata_cmr/COVID-19 Laboratories.csv"
+covid_lab_mapping <- import(path_to_hcov_map_data) %>%
+  clean_names() %>%
+  mutate(laboratoire=trimws(laboratoire))
+
+lab_cmr_summary <- inner_join(lab_cmr_summary, covid_lab_mapping, by=c("laboratory_name"="laboratoire"))
+
+lab_cmr_epidata <- inner_join(lab_cmr_epidata, covid_lab_mapping, by=c("laboratory_name"="laboratoire"))
