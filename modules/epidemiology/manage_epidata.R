@@ -47,7 +47,7 @@ import.epidata <- function(path_to_epidata) {
 }
 
 
-#all_cmr_epidata <- import.epidata(path_to_epidata = path_to_data)
+all_cmr_epidata <- import.epidata(path_to_epidata = path_to_data)
 
 #Summarise epidata per epi-week and compute positive_rate
 weekly.epidata <- function(all_cmr_epidata){
