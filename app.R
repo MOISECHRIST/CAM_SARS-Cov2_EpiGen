@@ -4,12 +4,13 @@ library(shiny)
 source("modules/epidemiology/manage_epidata.R")
 source("modules/epidemiology/plot_epidata.R")
 source("modules/geo-mapping/epi_geomapping_plot.R")
+source("modules/genomic/variant_sub-lineage_analysis.R")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("CAM SARS-Cov2 EpiGen"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
