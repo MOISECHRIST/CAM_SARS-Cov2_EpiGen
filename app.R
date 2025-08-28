@@ -2,6 +2,8 @@ library(shiny)
 
 #Import modules
 source("modules/epidemiology/manage_epidata.R")
+source("modules/epidemiology/plot_epidata.R")
+source("modules/geo-mapping/epi_geomapping_plot.R")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(

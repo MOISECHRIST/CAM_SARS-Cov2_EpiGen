@@ -17,15 +17,15 @@ plot_epicurve <- function(data){
       fill = "Legende"
     )
   return(ggplotly(g) %>%
-           plotly::layout(legend = list(orientation = "h",   # horizontal
-                                x = 0.5,             # centré
+           plotly::layout(legend = list(orientation = "h",   
+                                x = 0.5,             
                                 xanchor = "center",
                                 y = -0.1)))
 }
 
-plot.epicurve <- plot_epicurve(weekly_epidata)
+#plot.epicurve <- plot_epicurve(weekly_epidata)
 
-plot_epicurve_region <- function(data, y_var, y_label){
+plot_epicurve_region <- function(data, y_var, y_label, min_epiweek = "2020-42", max_epiweek = "2023-9"){
   g <- ggplot(data, aes(x = epi_week, y = .data[[y_var]], fill = region)) +
     geom_bar(stat = 'identity') +
     theme(
@@ -65,14 +65,14 @@ plot_epicurve_posrate <- function(data){
 }
 
 
-plot.epicurve.posrate <- plot_epicurve_posrate(weekly_epidata)
+#plot.epicurve.posrate <- plot_epicurve_posrate(weekly_epidata)
 
-plot.epicurve
-plot_epicurve_region(region_cmr_epidata, "analysed_samples", "Analysed samples")
-plot_epicurve_region(region_cmr_epidata, "received_samples", "Received samples")
-plot_epicurve_region(region_cmr_epidata, "positive_samples", "Positive samples")
-plot_epicurve_region(region_cmr_epidata, "positive_rate", "Positive rate")
-plot.epicurve.posrate
+#plot.epicurve
+#plot_epicurve_region(region_cmr_epidata, "analysed_samples", "Analysed samples")
+#plot_epicurve_region(region_cmr_epidata, "received_samples", "Received samples")
+#plot_epicurve_region(region_cmr_epidata, "positive_samples", "Positive samples")
+#plot_epicurve_region(region_cmr_epidata, "positive_rate", "Positive rate")
+#plot.epicurve.posrate
 
 
 

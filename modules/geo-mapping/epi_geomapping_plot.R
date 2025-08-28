@@ -37,7 +37,7 @@ plot_region_posrate_map <- function(shp_path, data){
 }
 
 
-plot.region.posrate.map <- plot_region_posrate_map(shp_path = shp_path, data = region_cmr_summary)
+#plot.region.posrate.map <- plot_region_posrate_map(shp_path = shp_path, data = region_cmr_summary)
 
 plot_cmr_map <- function(data, var_col = "received_samples", title_point="Received samples", number=0.1) {
   
@@ -59,7 +59,6 @@ plot_cmr_map <- function(data, var_col = "received_samples", title_point="Receiv
   
   colors_bins <- rep("transparent", length(labels))
   
-  # Création de la carte
   cmr_map <- leaflet(data) %>%
     addTiles() %>%
     setView(lng = 12.343439, lat = 7.365302, zoom = 6) %>%
@@ -101,10 +100,10 @@ plot_cmr_map <- function(data, var_col = "received_samples", title_point="Receiv
   return(cmr_map)
 }
 
-plot.region.posrate.map
-plot_cmr_map(lab_cmr_summary,"analysed_samples", "Analysed samples", 0.01)
-plot_cmr_map(lab_cmr_summary,"received_samples", "Received samples", 0.001)
-plot_cmr_map(lab_cmr_summary,"positive_samples", "Positive samples", 1)
-plot_cmr_map(lab_cmr_summary,"positive_rate", "Positive rate", 5)
+#plot.region.posrate.map
+#plot_cmr_map(lab_cmr_summary,"analysed_samples", "Analysed samples", 0.01)
+#plot_cmr_map(lab_cmr_summary,"received_samples", "Received samples", 0.001)
+#plot_cmr_map(lab_cmr_summary,"positive_samples", "Positive samples", 1)
+#plot_cmr_map(lab_cmr_summary,"positive_rate", "Positive rate", 5)
 
 
